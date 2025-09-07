@@ -22,15 +22,19 @@ I would have might forgotten to run "git push." When committing a change with "g
 
 ### Q1 - Bulleted List
 
-Insert your answer and explanation here
+- Apples
+- Bananas
+- Grapes
+
+A bulleted list is unordered which means the items do not have a specific sequence. A numbered list is ordered and further implies that the order or ranking of items is important such as steps in a process.
 
 ### Q2 - Markdown Paragraph
 
-Insert your answer and explanation here
+I was walking through the *interfimensional potato farm* when I stumbled upon a **talking llama** who whispered, "***Never trust a penguin with sunglasses***." Confused, I typed 'llama.speak("Hello, traveler!")' into my reality debugger and suddenly a portal opened. If this sounds absurd, you're not alone; real more about these phenomena at the [Society for the Bizarre Agricultural Incidents] (https://www.youtube.com/watch?v=dQw4w9WgXcQ).
 
 ### Q3 - Animal Image
 
-Insert your answer and explanation here
+![This is a picture of my German Shepherd mix, Nala. (She is the brown and black dog on the right)] (mydog_nala.png) This image of my dog was uploaded to the same directory as my report file and is displayed using the MArkdown image syntax.
 
 ## Tableau
 
