@@ -46,7 +46,7 @@ I was walking through the *interfimensional potato farm* when I stumbled upon a 
 
 ### Q1 - URL of Google Colab Notebook
 
-Insert your answer and explanation here
+[Click here to view my edited Google Colab notebook.](https://colab.research.google.com/drive/1DPzKkwnf7ublCETg9x0oy47Hue2RZ1Ia?usp=sharing) I followed the overview tutorial, ran example code, and made my own edits to several of the cells. I also added text cells below each of the edited cells to explain what exactly I changed.
 
 ## Python/Seaborn
 
