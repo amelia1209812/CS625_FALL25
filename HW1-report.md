@@ -88,8 +88,12 @@ When I commented out the `vl.y().fieldN("Origin")` line, the chart could no long
 
 ## References
 
-*Eavery report must include a References section that lists the webpages and URLs that you consulted while completing the assignment. Replace the items below with the references you consulted - these are just examples.* ***Everyone will use some reference to complete these assignments (even I would). You will lose points on your assignment if you do not include the references you used.***
-
 * Graph Network using Vega-Lite or Vega, <https://stackoverflow.com/questions/77096216/graph-network-using-vega-lite-or-vega>
-* Calculating percentage change - Math for journalists, <https://observablehq.com/@nshiab/math-for-journalists>
-* ChatGPT: "How can I add an axis label to my line chart in Seaborn?", <https://chatgpt.com/share/684c8e25-4944-8011-b265-ae9aefc07959>
+* Adding a File to a Repository,
+<https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository>
+* Tutorial: Get Started with Tableau Desktop, <https://help.tableau.com/current/guides/get-started-tutorial/en-us/get-started-tutorial-home.htm>
+* Step 3: Focus your results,
+<https://help.tableau.com/current/guides/get-started-tutorial/en-us/get-started-tutorial-focus.htm>
+* Palmer Penguins Dataset,
+<https://github.com/mcnakhaee/palmerpenguins>
+
