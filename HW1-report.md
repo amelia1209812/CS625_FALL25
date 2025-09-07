@@ -40,7 +40,7 @@ I was walking through the *interfimensional potato farm* when I stumbled upon a 
 
 ### Q1 - Region Other Than the South
 
-Insert your answer and explanation here
+![This is a bar chart showing the sales by sub-category for the East region.](Sales_in_the_East.png) This bar chart shows the total sales by product sub-categoryfor the East region, using the Sample-Superstore dataset provided by Tableau. I filtered the data set to show only order from the East and then sorted the sub-categories by total sales in descending order. This chart helps show which product types contribute the most revenue in that specific region.
 
 ## Google Colab
 
