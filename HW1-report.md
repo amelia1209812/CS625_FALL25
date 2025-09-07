@@ -12,11 +12,11 @@ My URL for my GitHub Repo is https://github.com/amelia1209812/CS625_FALL25 . I u
 
 ### Q2 - Pull Command
 
-"git pull" send remote changes to the local machine. The "pull" command fetches updates from the remote repository and then merges them into the current local branch. It does not send changes to the server, that is what "git push" does.
+`git pull` send remote changes to the local machine. The `pull` command fetches updates from the remote repository and then merges them into the current local branch. It does not send changes to the server, that is what `git push` does.
 
 ### Q3 - Local Commits
 
-I would have might forgotten to run "git push." When committing a change with "git commit," it only saves the update locally. To transfer the change to the GitHub repository, I will need to run "git push" so that it will show up on the GitHub desktop. 
+I would have might forgotten to run `git push` . When committing a change with `git commit` , it only saves the update locally. To transfer the change to the GitHub repository, I will need to run `git push` so that it will show up on the GitHub desktop. 
 
 ## Markdown
 
