@@ -68,19 +68,23 @@ When removing the outer parentheses I got a syntax error this is because Python 
 
 ### Q1 - markCircle to markSquare
 
-Insert your answer and explanation here
+When I changed `markCircle()` to `markSquare()`, each data point within the scatterplot changed from a circle to a square. This did not change the data itself but only the shape of the markers.
 
 ### Q2 - markCircle to markPoint
 
-Insert your answer and explanation here
+When I changed to `markPoint()`, the points became smaller with slight styling differences. `markPoint()` is a marker that can be further customized, and by default, looks like outline circles compared to filled-in circles or squares.
 
 ### Q3 - Swap X and Y Axes on Scatterplot
 
-Insert your answer and explanation here
+To swap the x and y axes, I changed the field assignments to reflect this:
+`vl.x().fieldQ("Miles_per_Gallon")`
+`vl.y().fielQ("Horsepower")`
+This reverses which variable is plotted on which axis, allowing you to look at the same data from a different view/orientation.
 
 ### Q4 - Remove fieldN(Origin)
 
-Insert your answer and explanation here
+![Bar chart with y-axis removed.](Section6Q4.png)
+When I commented out the `vl.y().fieldN("Origin")` line, the chart could no longer grou the data by origin. Instead, the bars were compressed to a single category, causing the chart to display just one bar per value on the x-axis. This happened because the vertical (y-axis) was removed.
 
 ## References
 
