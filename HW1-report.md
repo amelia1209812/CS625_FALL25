@@ -34,7 +34,7 @@ I was walking through the *interfimensional potato farm* when I stumbled upon a 
 
 ### Q3 - Animal Image
 
-![This is a picture of my German Shepherd mix, Nala. (She is the brown and black dog on the right)](mydog_nala.png) This image of my dog was uploaded to the same directory as my report file and is displayed using the MArkdown image syntax.
+![This is a picture of my German Shepherd mix, Nala. (She is the brown and black dog on the right)](mydog_nala.jpeg) This image of my dog was uploaded to the same directory as my report file and is displayed using the MArkdown image syntax.
 
 ## Tableau
 
