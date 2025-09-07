@@ -1,6 +1,6 @@
 # Homework 1: Tool Setup
 
-Insert Your Name Here  
+Amelia Ragsdale  
 CS 625, Fall 2025  
 Due: September 7, 2025
 
@@ -8,15 +8,15 @@ Due: September 7, 2025
 
 ### Q1 - URL of GitHub Repo
 
-Insert your answer and explanation here
+My URL for my GitHub Repo is https://github.com/amelia1209812/CS625_FALL25 . I used this repo to practice basic Git operations like adding files, committing, pushing, and pulling the different changes.
 
 ### Q2 - Pull Command
 
-Insert your answer and explanation here
+"git pull" send remote changes to the local machine. The "pull" command fetches updates from the remote repository and then merges them into the current local branch. It does not send changes to the server, that is what "git push" does.
 
 ### Q3 - Local Commits
 
-Insert your answer and explanation here
+I would have might forgotten to run "git push." When committing a change with "git commit," it only saves the update locally. To transfer the change to the GitHub repository, I will need to run "git push" so that it will show up on the GitHub desktop. 
 
 ## Markdown
 
