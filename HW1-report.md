@@ -52,15 +52,17 @@ I was walking through the *interfimensional potato farm* when I stumbled upon a 
 
 ### Q1 - First Penguin Image
 
-Insert your answer and explanation here
+![This is a scatter plot of bill length vs. bill depth.](Section5Q1.png) 
+This scatter plot visually shows the relationship between bill length and bill depth across all penguins in the dataset. Each dot represents a penguin. The plot helps identify patterns or grouping based on the beak size, which is useful for distinguishing the different species.
 
 ### Q2 - Second Penguin Image
 
-Insert your answer and explanation here
+![This is a bar chart of penguin species vs. body mass.](Section5Q2.png)
+This bar chart shows the average body mass in grams for each penguin species. It aggregates the data using `.Agg()`, allowing for easy comparison of how heavy each species of penguins tend to be.
 
 ### Q3 - Outer Parenthesis
 
-Insert your answer and explanation here
+When removing the outer parentheses I got a syntax error this is because Python expects `.add()` to be called on the result of the `so.Plot()` expression. The outer parentheses allows the statment to be broken into multiple lines. Without having the parentheses, Python does not know where the full statement begins and ends.
 
 ## Observable and Vega-Lite
 
