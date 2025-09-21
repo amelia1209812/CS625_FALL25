@@ -38,24 +38,37 @@ However, while testing several variations of the above **GREL expression**, I ac
 
 In conclusion, across all columns I made extensive use of **GREL transformations**, including `value.toTitlecase()` for capitalization, `value.trim()` to remove extra spaces, `value.replace(" and ", ",")` to separate multi-pet names, and `f(isBlank(value), "Unknown", value)` to fill in missing data. I avoided using RegEx heavily after some earlier expressions caused errors or unexpected deletions. For columns that did not require numeric conversion, I focused on consistency, formatting, and removing unwanted characters. While I relied heavily on OpenRefine’s powerful features like facets, clustering, and transformations, I also made targeted manual edits when automated methods weren’t effective. In particular, the “kind of pet” and “age” columns required the most manual attention due to the wide variety of inconsistent, messy, or irrelevant entries.
 
+## Part 2. Analyze Cleaned Data
 
+### Q1 - How many kinds of pets are in your cleaned dataset?
 
- 
+I used a **Text Facet** on the "Kind of Pet" column to see all the unique types of animal in the dataset. After cleaning (removing, irrelevant or fake enteries like "server" or "card"), i found 46 kinds of pets in the cleaned data. these included common pets such as dog, cat, guinea pig, rabbit, bird, fish, etc. One odd pet to note is a cow.
 
-## Markdown
+### Q2 - How many breeds of cats are in your cleaned dataset?
 
-### Q1 - Bulleted List
+I filtered the dataset to only include enteries where the kind of pet is "Cat". Then I applied a **Text Facet** on the **Breed** column. After reviewing and attempting to merge all similar breed names through clustering and during cleaning, I found 97 cat breeds in the dataset.
 
-- Apples
-- Bananas
-- Grapes
+### Q3 - How many guinea pigs are in your cleaned dataset?
 
-A bulleted list is unordered which means the items do not have a specific sequence. A numbered list is ordered and further implies that the order or ranking of items is important such as steps in a process.
+I filtered the "Kind of Pet" column to include only rows labeled "Guinea Pig". The cleaned dataset contains 10 guinea pigs. I ensured that the cleanig phase, all variations like "guinea pig", "guineapig", "piggy", etc. were all clustered together under a single standardized term.
 
-### Q2 - Markdown Paragraph
+### Q4 - Who is the oldest dog in your cleaned dataset? Give the dog's name, breed, and age. If there's a tie, list all oldest dogs.
 
-I was walking through the *interfimensional potato farm* when I stumbled upon a **talking llama** who whispered, "***Never trust a penguin with sunglasses***." Confused, I typed `llama.speak("Hello, traveler!")` into my reality debugger and suddenly a portal opened. If this sounds absurd, you're not alone; real more about these phenomena at the [Society for the Bizarre Agricultural Incidents](https://www.youtube.com/watch?v=dQw4w9WgXcQ).
+I filtered the dataset to include only dogs and then sorted the "Age" column in descending order. There were two dogs of the same oldest age:
+**Name**: Elsa
+**Breed**: German Shepherd
+**Age**: 23
 
-### Q3 - Animal Image
+**Name**: Belle
+**Breed**: Golden Retriever
+**Age**: 23
 
-![This is a picture of my German Shepherd mix, Nala. (She is the brown and black dog on the right)](mydog_nala.JPG) This image of my dog was uploaded to the same directory as my report file and is displayed using the MArkdown image syntax.
+### Q5 - What is the most popular everyday name for a dog in your cleaned dataset? If there's a tie, list all top names and number of occurrences.
+
+After filtering the dataset to include only dogs, I applied a **Text Facet** on the **Name** column. I sorted the facet by count and found that the most popular dog name is:
+**Name**: Sophie
+**Count**: 9 occurrences
+
+### NOTE
+
+These results are based on my cleaned dataset. Some answers, especially for breed counts and pet types, depend on how I handled inconsistent or irrelevant entried. This may result in slightly different counts or rankings compared to another's cleaned dataset.
