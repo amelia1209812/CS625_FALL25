@@ -16,7 +16,13 @@ For the **pet name** column, I used a similar approach. I began with a **Text Fa
 
 In the **pet full name** column, I followed the same process: clustering to merge similar entries, and GREL to handle formatting. I used expressions like `values.toTitlecase()` to fix the inconsistent capitalization, and `if(isBlank(value), "Unknown", value)` to fil in missing or blank entries withha default value of "Unknown". This helped reduce noise and made the column more consistent for analysis.
 
-The **age** column was by far the most difficult and time-consuming to clean. It included a wide variety of inconsistent and irrelevant enteries such as "puppy", "baby", "born in 2015", and specific ages like "10 months", "2 years", and "~5". I started by filtering the colums by used facets to identify valid age entries and listed rows as "Unknown" if it couldn't be used for numeric analysis. I chose to keep only those enteries that specified age in either weeks, months, or year. I attempted to normalize the age values using **GREL expressions** to convert months to decimal years (ex. 6 months = 0.5 ) and to extract numbers from strings. One expression I used was:
+!(CS625_PetName_BEFORE.png) 
+
+The **age** column was by far the most difficult and time-consuming to clean. It included a wide variety of inconsistent and irrelevant enteries such as "puppy", "baby", "born in 2015", and specific ages like "10 months", "2 years", and "~5". I started by filtering the colums by used facets to identify valid age entries and listed rows as "Unknown" if it couldn't be used for numeric analysis. I chose to keep only those enteries that specified age in either weeks, months, or year. 
+
+!(CS625_PetName_AGE.png)
+
+I attempted to normalize the age values using **GREL expressions** to convert months to decimal years (ex. 6 months = 0.5 ) and to extract numbers from strings. One expression I used was:
 
 `if(value.toLowercase().contains("month"),
   toNumber(value.toLowercase().split(" ")[0]) / 12,
@@ -27,6 +33,8 @@ The **age** column was by far the most difficult and time-consuming to clean. It
 )
 `
 However, while testing several variations of the above **GREL expression**, I accidentally applied a expression that wiped out the entire column, deleting all the age values. Fortunately, I was able to recover my work by using OpenRefine's **Undo/Redo history**, which allowed me to revert the changes and start over. After recovering the data, I attempted to complete additional cleaning using both **clustering** and **manual edits**. In the end, I retained only cleaned enteries where the age was clearly expressed in weeks, months, or number of year.
+
+!(CS625_PetName_AFTER.png)
 
 In conclusion, across all columns I made extensive use of **GREL transformations**, including `value.toTitlecase()` for capitalization, `value.trim()` to remove extra spaces, `value.replace(" and ", ",")` to separate multi-pet names, and `f(isBlank(value), "Unknown", value)` to fill in missing data. I avoided using RegEx heavily after some earlier expressions caused errors or unexpected deletions. For columns that did not require numeric conversion, I focused on consistency, formatting, and removing unwanted characters. While I relied heavily on OpenRefine’s powerful features like facets, clustering, and transformations, I also made targeted manual edits when automated methods weren’t effective. In particular, the “kind of pet” and “age” columns required the most manual attention due to the wide variety of inconsistent, messy, or irrelevant entries.
 
