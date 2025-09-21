@@ -80,6 +80,6 @@ After filtering the dataset to include only dogs, I applied a **Text Facet** on 
 
 These results are based on my cleaned dataset. Some answers, especially for breed counts and pet types, depend on how I handled inconsistent or irrelevant entried. This may result in slightly different counts or rankings compared to another's cleaned dataset.
 
-[HW2-petnames.csv](https://github.com/amelia1209812/CS625_FALL25/blob/main/HW2-petnames.csv.)
+[HW2-petnames.csv](https://github.com/amelia1209812/CS625_FALL25/blob/main/HW2-petnames.csv)
 
 [HW2-petnames.json](https://github.com/amelia1209812/CS625_FALL25/blob/main/HW2-petnames.json)
