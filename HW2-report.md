@@ -55,6 +55,7 @@ I filtered the "Kind of Pet" column to include only rows labeled "Guinea Pig". T
 ### Q4 - Who is the oldest dog in your cleaned dataset? Give the dog's name, breed, and age. If there's a tie, list all oldest dogs.
 
 I filtered the dataset to include only dogs and then sorted the "Age" column in descending order. There were two dogs of the same oldest age:
+
 **Name**: Elsa
 **Breed**: German Shepherd
 **Age**: 23
@@ -66,6 +67,7 @@ I filtered the dataset to include only dogs and then sorted the "Age" column in 
 ### Q5 - What is the most popular everyday name for a dog in your cleaned dataset? If there's a tie, list all top names and number of occurrences.
 
 After filtering the dataset to include only dogs, I applied a **Text Facet** on the **Name** column. I sorted the facet by count and found that the most popular dog name is:
+
 **Name**: Sophie
 **Count**: 9 occurrences
 
