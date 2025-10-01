@@ -12,8 +12,9 @@ For my analysis, I cleaned the dataset by attempting to remove totals, percentag
 
 ## Chart 1 - Bar Chart
 
-***Idiom***: Bar Chart
-***Marks***: Rectangles (Bars)
+- ***Idiom***: Bar Chart
+- 
+- ***Marks***: Rectangles (Bars)
 ***Data***: Educational Attainment (categorical), Number of Women (quantitative)
 ***Encode***: Living Arrangment/Education Level -> x-axis, Pivot Field Values -> y-axis
 
