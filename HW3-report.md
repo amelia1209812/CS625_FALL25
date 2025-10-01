@@ -60,6 +60,8 @@ I had extreme difficulty cleaning the data from the Census website which caused 
   
 [HW2-petnames.csv](https://github.com/amelia1209812/CS625_FALL25/blob/main/HW2-petnames.csv)
 
+[12s0090.xls]() - Raw Data from Census
+
 [HW3.twb]()
 
 [CS_625_HW3.py]()
