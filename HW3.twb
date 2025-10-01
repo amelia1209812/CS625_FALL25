@@ -1,0 +1,849 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Untitled spreadsheet - 2010' inline='true' name='federated.0fvgfc810fw1jv119mwr300vgqgf' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Untitled spreadsheet - 2010' name='textscan.1iv2l8w0od80xa14c60j91uhhk79'>
+            <connection class='textclean' cleaning='yes' compat='no' csvFile='/Users/ameliaragsdale/Downloads/Untitled spreadsheet - 2010.csv' dataRefreshTime='' directory='/Users/ameliaragsdale/Downloads' filename='/var/folders/lz/4d15txfs0cv343ztnf1w9t_h0000gn/T/tableau-temp/0lddyh90vtii1w14r7ywg0aj7yrs/Untitled spreadsheet - 2010.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='string' name='Pivot Field Names' />
+            <column datatype='real' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[High school Grad 30 to 44 years old]' />
+            <value name='[Some college 30 to 44 years old]' />
+            <value name='[Bachelor&apos;s degree or more 30 to 44 years old 3]' />
+            <value name='[Less than HS 30 to 44 years old]' />
+            <value name='[Bachelor&apos;s degree or more 15 to 29 years of age]' />
+            <value name='[High school Grad 15 to 29 years of age]' />
+            <value name='[Less than HS 15 to 29 years of age]' />
+            <value name='[Some college 15 to 29 years of age]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[Untitled spreadsheet - 2010.csv].[30 to 44 years old 1]' />
+              <field name='[Untitled spreadsheet - 2010.csv].[30 to 44 years old 2]' />
+              <field name='[Untitled spreadsheet - 2010.csv].[30 to 44 years old 3]' />
+              <field name='[Untitled spreadsheet - 2010.csv].[30 to 44 years old]' />
+              <field name='[Untitled spreadsheet - 2010.csv].[Bachelor&apos;s degree or more 15 to 29 years of age]' />
+              <field name='[Untitled spreadsheet - 2010.csv].[High school graduate 15 to 29 years of age]' />
+              <field name='[Untitled spreadsheet - 2010.csv].[Less than high school 15 to 29 years of age]' />
+              <field name='[Untitled spreadsheet - 2010.csv].[Some college 15 to 29 years of age]' />
+            </group>
+          </groups>
+          <relation connection='textscan.1iv2l8w0od80xa14c60j91uhhk79' name='Untitled spreadsheet - 2010.csv' table='[Untitled spreadsheet - 20#csv$]' type='table'>
+            <columns character-set='UTF-8' gridOrigin='A1:I11:no:A1:I11:2' header='no' locale='en_US' separator=','>
+              <column datatype='string' name='Living arrangement' ordinal='0' />
+              <column datatype='real' name='Less than high school 15 to 29 years of age' ordinal='1' />
+              <column datatype='real' name='30 to 44 years old' ordinal='2' />
+              <column datatype='real' name='High school graduate 15 to 29 years of age' ordinal='3' />
+              <column datatype='real' name='30 to 44 years old 1' ordinal='4' />
+              <column datatype='real' name='Some college 15 to 29 years of age' ordinal='5' />
+              <column datatype='real' name='30 to 44 years old 2' ordinal='6' />
+              <column datatype='real' name='Bachelor&apos;s degree or more 15 to 29 years of age' ordinal='7' />
+              <column datatype='real' name='30 to 44 years old 3' ordinal='8' />
+            </columns>
+          </relation>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Untitled spreadsheet - 2010.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>1</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:I11:no:A1:I11:2&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>40</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Living arrangement</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Living arrangement]</local-name>
+            <parent-name>[Untitled spreadsheet - 2010.csv]</parent-name>
+            <remote-alias>Living arrangement</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Untitled spreadsheet - 2010.csv_E1A57DCE147846D3A0DF5FC038C78344]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Names</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pivot Field Names]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Names</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Untitled spreadsheet - 2010.csv_E1A57DCE147846D3A0DF5FC038C78344]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Values</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Pivot Field Values]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Values</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Untitled spreadsheet - 2010.csv_E1A57DCE147846D3A0DF5FC038C78344]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='College Grad Value' datatype='real' name='[Calculation_1355724283759570944]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Pivot Field Names] = &quot;Bachelor&apos;s degree or more 30 to 44 years of old 3 &quot; THEN [Pivot Field Values] END' />
+      </column>
+      <column caption='Less than HS Value' datatype='real' name='[Calculation_1355724283759792129]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Pivot Field Names] = &quot;Less than HS 30 to 44 years old&quot; THEN [Pivot Field Values] END' />
+      </column>
+      <column datatype='string' name='[Living arrangement]' role='dimension' type='nominal' />
+      <column caption='Age Group' datatype='string' name='[Pivot Field Names - Split 1]' role='dimension' type='nominal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.0fvgfc810fw1jv119mwr300vgqgf].[Pivot Field Names]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [Pivot Field Names], &quot;30&quot;, 1 ) )' />
+      </column>
+      <column caption='Education Level' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+      <column caption='Untitled spreadsheet - 2010.csv' datatype='table' name='[__tableau_internal_object_id__].[Untitled spreadsheet - 2010.csv_E1A57DCE147846D3A0DF5FC038C78344]' role='measure' type='quantitative' />
+      <column-instance column='[Living arrangement]' derivation='None' name='[none:Living arrangement:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Pivot Field Names - Split 1]' derivation='None' name='[none:Pivot Field Names - Split 1:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Pivot Field Names]' derivation='None' name='[none:Pivot Field Names:nk]' pivot='key' type='nominal' />
+      <group hidden='true' name='[Exclusions (Age Group,Living arrangement)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Pivot Field Names - Split 1:nk]' />
+          <groupfilter function='level-members' level='[none:Living arrangement:nk]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/lz/4d15txfs0cv343ztnf1w9t_h0000gn/T/tableau-temp/#TableauTemp_1xlq0gm0kp105r1b08ob61ii0lci.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/28/2025 10:10:45 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Living arrangement</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Living arrangement]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Living arrangement</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Untitled spreadsheet - 2010.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Untitled spreadsheet - 2010.csv_E1A57DCE147846D3A0DF5FC038C78344]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pivot Field Names</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Pivot Field Names]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pivot Field Names</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Pivot</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[Untitled spreadsheet - 2010.csv_E1A57DCE147846D3A0DF5FC038C78344]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pivot Field Values</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Pivot Field Values]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pivot Field Values</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Pivot</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>33</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Untitled spreadsheet - 2010.csv_E1A57DCE147846D3A0DF5FC038C78344]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Pivot Field Names:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Bachelor&apos;s degree or more 15 to 29 years of age&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Bachelor&apos;s degree or more 30 to 44 years old 3&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Some college 15 to 29 years of age&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Less than HS 30 to 44 years old&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Less than HS 15 to 29 years of age&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;High school Grad 30 to 44 years old&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;High school Grad 15 to 29 years of age&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Some college 30 to 44 years old&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Living arrangement:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;  Total (1,000)&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;PERCENT&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Not living with spouse or partner&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Married spouse present&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Cohabiting&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Untitled spreadsheet - 2010.csv' id='Untitled spreadsheet - 2010.csv_E1A57DCE147846D3A0DF5FC038C78344'>
+            <properties context=''>
+              <relation name='Pivot' type='pivot'>
+                <columns>
+                  <column datatype='string' name='Pivot Field Names' />
+                  <column datatype='real' name='Pivot Field Values' />
+                </columns>
+                <tag name='Pivot Field Names'>
+                  <value name='[High school Grad 30 to 44 years old]' />
+                  <value name='[Some college 30 to 44 years old]' />
+                  <value name='[Bachelor&apos;s degree or more 30 to 44 years old 3]' />
+                  <value name='[Less than HS 30 to 44 years old]' />
+                  <value name='[Bachelor&apos;s degree or more 15 to 29 years of age]' />
+                  <value name='[High school Grad 15 to 29 years of age]' />
+                  <value name='[Less than HS 15 to 29 years of age]' />
+                  <value name='[Some college 15 to 29 years of age]' />
+                </tag>
+                <groups>
+                  <group name='Pivot Field Values'>
+                    <field name='[Untitled spreadsheet - 2010.csv].[30 to 44 years old 1]' />
+                    <field name='[Untitled spreadsheet - 2010.csv].[30 to 44 years old 2]' />
+                    <field name='[Untitled spreadsheet - 2010.csv].[30 to 44 years old 3]' />
+                    <field name='[Untitled spreadsheet - 2010.csv].[30 to 44 years old]' />
+                    <field name='[Untitled spreadsheet - 2010.csv].[Bachelor&apos;s degree or more 15 to 29 years of age]' />
+                    <field name='[Untitled spreadsheet - 2010.csv].[High school graduate 15 to 29 years of age]' />
+                    <field name='[Untitled spreadsheet - 2010.csv].[Less than high school 15 to 29 years of age]' />
+                    <field name='[Untitled spreadsheet - 2010.csv].[Some college 15 to 29 years of age]' />
+                  </group>
+                </groups>
+                <relation connection='textscan.1iv2l8w0od80xa14c60j91uhhk79' name='Untitled spreadsheet - 2010.csv' table='[Untitled spreadsheet - 20#csv$]' type='table'>
+                  <columns character-set='UTF-8' gridOrigin='A1:I11:no:A1:I11:2' header='no' locale='en_US' separator=','>
+                    <column datatype='string' name='Living arrangement' ordinal='0' />
+                    <column datatype='real' name='Less than high school 15 to 29 years of age' ordinal='1' />
+                    <column datatype='real' name='30 to 44 years old' ordinal='2' />
+                    <column datatype='real' name='High school graduate 15 to 29 years of age' ordinal='3' />
+                    <column datatype='real' name='30 to 44 years old 1' ordinal='4' />
+                    <column datatype='real' name='Some college 15 to 29 years of age' ordinal='5' />
+                    <column datatype='real' name='30 to 44 years old 2' ordinal='6' />
+                    <column datatype='real' name='Bachelor&apos;s degree or more 15 to 29 years of age' ordinal='7' />
+                    <column datatype='real' name='30 to 44 years old 3' ordinal='8' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Untitled spreadsheet - 2010' name='federated.0fvgfc810fw1jv119mwr300vgqgf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fvgfc810fw1jv119mwr300vgqgf'>
+            <column datatype='string' name='[Living arrangement]' role='dimension' type='nominal' />
+            <column caption='Age Group' datatype='string' name='[Pivot Field Names - Split 1]' role='dimension' type='nominal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.0fvgfc810fw1jv119mwr300vgqgf].[Pivot Field Names]'>
+              <calculation class='tableau' formula='TRIM( SPLIT( [Pivot Field Names], &quot;30&quot;, 1 ) )' />
+            </column>
+            <column caption='Education Level' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Pivot Field Values]' role='measure' type='quantitative' />
+            <column-instance column='[Living arrangement]' derivation='None' name='[none:Living arrangement:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Pivot Field Names - Split 1]' derivation='None' name='[none:Pivot Field Names - Split 1:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Pivot Field Names]' derivation='None' name='[none:Pivot Field Names:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Pivot Field Values]' derivation='Sum' name='[sum:Pivot Field Values:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0fvgfc810fw1jv119mwr300vgqgf].[none:Living arrangement:nk]' kind='hide'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Living arrangement:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:Living arrangement:nk]' member='&quot;  Total (1,000)&quot;' />
+                <groupfilter function='member' level='[none:Living arrangement:nk]' member='&quot;PERCENT&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0fvgfc810fw1jv119mwr300vgqgf].[none:Pivot Field Names - Split 1:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Pivot Field Names - Split 1:nk]' member='&quot;Bachelor&apos;s degree or more&quot;' />
+              <groupfilter function='member' level='[none:Pivot Field Names - Split 1:nk]' member='&quot;High school Grad&quot;' />
+              <groupfilter function='member' level='[none:Pivot Field Names - Split 1:nk]' member='&quot;Less than HS&quot;' />
+              <groupfilter function='member' level='[none:Pivot Field Names - Split 1:nk]' member='&quot;Some college&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0fvgfc810fw1jv119mwr300vgqgf].[none:Pivot Field Names - Split 1:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0fvgfc810fw1jv119mwr300vgqgf].[none:Pivot Field Names:nk]' value='89' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0fvgfc810fw1jv119mwr300vgqgf].[none:Pivot Field Names:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0fvgfc810fw1jv119mwr300vgqgf].[sum:Pivot Field Values:qk]</rows>
+        <cols>([federated.0fvgfc810fw1jv119mwr300vgqgf].[none:Living arrangement:nk] / [federated.0fvgfc810fw1jv119mwr300vgqgf].[none:Pivot Field Names:nk])</cols>
+      </table>
+      <simple-id uuid='{03D19992-3AD3-4C9E-BC32-BD9772CB525E}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Untitled spreadsheet - 2010' name='federated.0fvgfc810fw1jv119mwr300vgqgf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fvgfc810fw1jv119mwr300vgqgf'>
+            <column caption='College Grad Value' datatype='real' name='[Calculation_1355724283759570944]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Pivot Field Names] = &quot;Bachelor&apos;s degree or more 30 to 44 years of old 3 &quot; THEN [Pivot Field Values] END' />
+            </column>
+            <column caption='Less than HS Value' datatype='real' name='[Calculation_1355724283759792129]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Pivot Field Names] = &quot;Less than HS 30 to 44 years old&quot; THEN [Pivot Field Values] END' />
+            </column>
+            <column datatype='string' name='[Living arrangement]' role='dimension' type='nominal' />
+            <column caption='Age Group' datatype='string' name='[Pivot Field Names - Split 1]' role='dimension' type='nominal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.0fvgfc810fw1jv119mwr300vgqgf].[Pivot Field Names]'>
+              <calculation class='tableau' formula='TRIM( SPLIT( [Pivot Field Names], &quot;30&quot;, 1 ) )' />
+            </column>
+            <column caption='Education Level' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Pivot Field Values]' role='measure' type='quantitative' />
+            <column-instance column='[Living arrangement]' derivation='None' name='[none:Living arrangement:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Pivot Field Names - Split 1]' derivation='None' name='[none:Pivot Field Names - Split 1:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1355724283759570944]' derivation='Sum' name='[sum:Calculation_1355724283759570944:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1355724283759792129]' derivation='Sum' name='[sum:Calculation_1355724283759792129:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0fvgfc810fw1jv119mwr300vgqgf].[none:Living arrangement:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Living arrangement:nk]' member='&quot;Cohabiting&quot;' />
+              <groupfilter function='member' level='[none:Living arrangement:nk]' member='&quot;Married spouse present&quot;' />
+              <groupfilter function='member' level='[none:Living arrangement:nk]' member='&quot;Not living with spouse or partner&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0fvgfc810fw1jv119mwr300vgqgf].[none:Living arrangement:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='omit-on-special' field='[federated.0fvgfc810fw1jv119mwr300vgqgf].[sum:Calculation_1355724283759570944:qk]' value='false' />
+            <format attr='break-on-special' field='[federated.0fvgfc810fw1jv119mwr300vgqgf].[sum:Calculation_1355724283759570944:qk]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.0fvgfc810fw1jv119mwr300vgqgf].[sum:Calculation_1355724283759570944:qk]' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.0fvgfc810fw1jv119mwr300vgqgf].[none:Pivot Field Names - Split 1:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0fvgfc810fw1jv119mwr300vgqgf].[sum:Calculation_1355724283759792129:qk]</rows>
+        <cols>[federated.0fvgfc810fw1jv119mwr300vgqgf].[sum:Calculation_1355724283759570944:qk]</cols>
+      </table>
+      <simple-id uuid='{17414168-16A6-4F95-AA98-A02F318B7F04}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Untitled spreadsheet - 2010' name='federated.0fvgfc810fw1jv119mwr300vgqgf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fvgfc810fw1jv119mwr300vgqgf'>
+            <column datatype='string' name='[Living arrangement]' role='dimension' type='nominal' />
+            <column caption='Age Group' datatype='string' name='[Pivot Field Names - Split 1]' role='dimension' type='nominal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.0fvgfc810fw1jv119mwr300vgqgf].[Pivot Field Names]'>
+              <calculation class='tableau' formula='TRIM( SPLIT( [Pivot Field Names], &quot;30&quot;, 1 ) )' />
+            </column>
+            <column caption='Education Level' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Pivot Field Values]' role='measure' type='quantitative' />
+            <column-instance column='[Living arrangement]' derivation='None' name='[none:Living arrangement:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Pivot Field Names - Split 1]' derivation='None' name='[none:Pivot Field Names - Split 1:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Pivot Field Names]' derivation='None' name='[none:Pivot Field Names:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Pivot Field Values]' derivation='Sum' name='[sum:Pivot Field Values:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0fvgfc810fw1jv119mwr300vgqgf].[Exclusions (Age Group,Living arrangement)]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='level-members' level='[none:Pivot Field Names - Split 1:nk]' />
+                <groupfilter function='level-members' level='[none:Living arrangement:nk]' />
+              </groupfilter>
+              <groupfilter function='reorder-dimensionality'>
+                <groupfilter function='crossjoin'>
+                  <groupfilter function='member' level='[none:Living arrangement:nk]' member='&quot;  Total (1,000)&quot;' />
+                  <groupfilter function='union'>
+                    <groupfilter function='member' level='[none:Pivot Field Names - Split 1:nk]' member='&quot;Bachelor&apos;s degree or more&quot;' />
+                    <groupfilter function='member' level='[none:Pivot Field Names - Split 1:nk]' member='&quot;High school Grad&quot;' />
+                    <groupfilter function='member' level='[none:Pivot Field Names - Split 1:nk]' member='&quot;Less than HS&quot;' />
+                    <groupfilter function='member' level='[none:Pivot Field Names - Split 1:nk]' member='&quot;Some college&quot;' />
+                  </groupfilter>
+                </groupfilter>
+                <order>
+                  <hierarchy name='[none:Pivot Field Names - Split 1:nk]' />
+                  <hierarchy name='[none:Living arrangement:nk]' />
+                </order>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0fvgfc810fw1jv119mwr300vgqgf].[none:Pivot Field Names:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Pivot Field Names:nk]' member='&quot;Bachelor&apos;s degree or more 30 to 44 years old 3&quot;' />
+              <groupfilter function='member' level='[none:Pivot Field Names:nk]' member='&quot;High school Grad 30 to 44 years old&quot;' />
+              <groupfilter function='member' level='[none:Pivot Field Names:nk]' member='&quot;Less than HS 30 to 44 years old&quot;' />
+              <groupfilter function='member' level='[none:Pivot Field Names:nk]' member='&quot;Some college 30 to 44 years old&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0fvgfc810fw1jv119mwr300vgqgf].[none:Pivot Field Names:nk]</column>
+            <column>[federated.0fvgfc810fw1jv119mwr300vgqgf].[Exclusions (Age Group,Living arrangement)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0fvgfc810fw1jv119mwr300vgqgf].[none:Pivot Field Names - Split 1:nk]' value='148' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0fvgfc810fw1jv119mwr300vgqgf].[none:Living arrangement:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0fvgfc810fw1jv119mwr300vgqgf].[sum:Pivot Field Values:qk]</rows>
+        <cols>[federated.0fvgfc810fw1jv119mwr300vgqgf].[none:Pivot Field Names - Split 1:nk]</cols>
+      </table>
+      <simple-id uuid='{76CD6B1D-858D-474B-994F-BFB6DB864D0F}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0fvgfc810fw1jv119mwr300vgqgf].[none:Pivot Field Names - Split 1:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0fvgfc810fw1jv119mwr300vgqgf].[none:Pivot Field Names:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6505FC27-053B-4CC4-B06B-A9275580C2D4}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7638C8BD-1685-4582-A738-BC6A6AE7DE83}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0fvgfc810fw1jv119mwr300vgqgf].[none:Living arrangement:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0fvgfc810fw1jv119mwr300vgqgf].[none:Living arrangement:nk]</field>
+            <field>[federated.0fvgfc810fw1jv119mwr300vgqgf].[none:Pivot Field Names - Split 1:nk]</field>
+            <field>[federated.0fvgfc810fw1jv119mwr300vgqgf].[none:Pivot Field Names:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{2E94786F-5CDF-4FA4-BBA2-818D84F54B7E}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='384' name='Sheet 3' width='384'>
+      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
+      sGbNmhs7AJYuXcqMGTPo6OjgjTfeoLKyklOnTlFZWYnb7cayLLxeb+Kz6oZhJD694na7Aejp
+      6eHMmTMcP348scxV4XCYjIwMDMMgIyODcDhMVVUVkyZNuuYTMDfddBORSISXXnqJCRMmcMcd
+      dwBXxrQLCgqu+cJUW1sbW7duxTAMxo8fT29vL1OmTLnuEzV33nlnYnjh5MmTXLhwIXEW0NLS
+      kgiUiRMnAlcO6oZh4PP5AEhNTSUej1NWVkZlZeU17V+tx+VyJb5U53K5iEajBAIBDMMgELD3
+      G6lXpaSksHbtWgzD4MKFC5w7dy7xb1fPeH5723y4D6+OKXs8HlasWJE4SKxevRq3253YHsA1
+      r/dq4JSXl2MYBrm5ufT29mKaJikpKRiGgd/vv2bsH8Dv99Pd3Y1pmtx+++2kpqYmaliyZAl+
+      v5/+/n5+9atfMWfOHNxuN7FYjI6ODmbNmjUmPjnV29vLmTNnePXVVzFNkwkTJvDQQw+xb98+
+      GhsbWbt2LQ8++CD79u3j7bff5r777qOoqOi69yBw3f64efNmcnNzr+n3q/O4XK5r9k+v18uD
+      Dz5IVlYW7e3t7N+/H8MwmDZtGlOnTqW2tpbdu3dz1113jeDWsYdhGEydOpWbbrop8bpCoRC5
+      ubmJ9+/Vk9eP2reBjzxu3LD3AODKWOrVIZXc3FwaGxupqKggJSWFnp4eDMPA4/Fw9OhRTp8+
+      /ZFjtZWVlXi9XubPn09hYeE1X2wqKSlh165dNDQ00NTURFZWFsB1O3FDQwN+v58lS5bQ2NiY
+      mF5UVMTu3bu5ePEiDQ0NAEyaNImJEycyZ84cAoEA06ZN47XXXmPnzp0cPXo0seyHz5oMw2D+
+      /PkUFRXhdrspKiqisrKSW265JfElOcMwyMrK4oMPPuDs2bPXfGFuoAed9PR02tvbqa+vZ9++
+      fRQWFhIKhfjggw8AOHjwoG03sj+qRo/HQygUorq6mjfffPN3Lh+NRqmvr2fBggX4/X6CwSCB
+      QID333+f06dP093dfd0yFRUV7Nq1i5aWFvbv309ZWRk5OTkcPHiQs2fP0t/ff93Zo8vlorS0
+      lK1bt9LQ0JDo1w/r7e0lNTWV8ePH09HRAVz5ocPq6moaGxsTNytvJKFQiLq6Ourq6hg3bhxu
+      t5u5c+cyefJkDMPg1KlTzJ07l7y8PLq6ujhx4gQzZsygsrKSS5cuJdpJSUnhxIkTdHV1XbcO
+      y7Lo6OigoqKCvr6+68L3o1x9f199/zQ2NlJdXc3Fixc5f/48OTk5w7cRkqipqSnxuurr68nJ
+      yWHKlClUV1fT0tLCoUOHEgf1jzNhwgQqKyuZNWtW4rjh/t73vve9Eah/2KWmptLf3084HKas
+      rIxbbrmFkpIS6urq8Hg83HrrrWRnZzN16lQuXrxIMBikpKSEnJwcMjMzcblcZGZmUlJSQnp6
+      OmfPnmXixInk5+eTnp5OVlYWkyZNoru7m8bGRu6++278fj+ZmZlkZmZeV0t9fT2tra3cfvvt
+      iY07fvx4QqEQTU1NzJo1i/z8fKqqqmhtbaWtrY1p06aRm5vL1KlTE2eOU6ZMISsri6ysLDwe
+      D2lpaRQWFnL69GkKCgooKipi6tSp1NfX093dzbRp0/D5fBiGQXl5OU1NTXR0dHDvvffi8Xg+
+      st7MzEyysrLwer1kZWURCATIzMwkOzubqqoqamtrSU9PZ8GCBcCVK6Hc3Fz6+/vJzs5OnK0N
+      h6uv1TCMRD1paWmJ6TNmzCAlJYXCwkIuX75MZWUlWVlZZGRkkJKSQmZmJqmpqbhcLiKRCCdP
+      nmTKlCkUFxdTWVlJa2srvb29TJw4kdzcXLKysnC73WRlZVFUVERmZibHjx9PnABMnjyZpqYm
+      Ojs7E0N6V7fX1YNMWVkZHo+H+vr6xBVWamoqWVlZpKamJs5eL126xK233kp+fj7FxcXEYjEa
+      GhqYPXs2BQUFN9S3qK+eVIVCocSB5OTJk/j9fsrLy4ErQ6GTJk2ioqICr9dLbW0tGRkZzJ49
+      O7Htru6jqampFBUVJd6HGRkZZGVlMXHiRE6cOEFpaSmTJ08mJycn8Z4IBAJkZWUlrurS09MT
+      70e32012djbjxo0jHo/T0NBAaWkp06dPHxNXXWlpade9rtzcXHw+H6dOnWLJkiVkZ2cn3qtX
+      3+MZGRmJbTt9+vTEcWP69On4fD7+H3lstXRqy3pGAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
