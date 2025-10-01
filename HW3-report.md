@@ -20,7 +20,6 @@ For my analysis, I cleaned the dataset by attempting to remove totals, percentag
 A bar chart is effective because educational attainment is a categorical variable with distinct, non-numeric groups (e.g., less than high school, high school graduate, some college, bachelor’s degree or more). Bar charts make it easy to compare the relative number of women across these categories. The differences in bar heights and color give an immediate, visual sense of which education levels are associated with higher or lower numbers of births in the past year. Since the values represent counts, not continuous measures, the discrete nature of a bar chart is more interpretable than, say, a line chart.
 
 ![](HW3_BarChart.png)
-[
 
 ## Chart 2 - Scatterplot
 
@@ -33,7 +32,7 @@ A scatterplot is appropriate here because age groups can be treated as ordinal c
 
 ![](HW3_Scatterplot.png)
 
-##Chart 3 - Multiple Line Chart
+## Chart 3 - Multiple Line Chart
 
 - ***Idiom***: Multiple Line Chart
 - ***Marks***: Lines
@@ -47,12 +46,22 @@ A multiple line chart is useful because it shows trends across an ordered dimens
 
 ## Recreated Chart
 
+I recreated the bar chart showing the number of women who had a child in 2012 by educational attainment. I first filtered this chart in Tableau then uploaded the document into Python which allowed for better cleaning, axis labeling, and figure sizing. The recreated chart present similar information births by education level but with simpler interface. The Python version offered more control and reproducibility through code instead of Tableau. Overall, both versions communicated the data clearly, but Python chart was better suited for consistency and reproducibility, whereas Tableau chart are more intuitive for quick creation and sharing.
 
+![](Python_BarGraph.png)
 
 ### NOTE & REFERENCES
 
 I had extreme difficulty cleaning the data from the Census website which caused problems showing visualization in data specifically in the Scatterplot chart. I also faced many glitches in Tableau which made it difficult to have the visualization show the correct visual I was going for.
 
+- U.S. Census Burea, *2012 Statistical Abstract of the United States*, <https://www.census.gov/library/publications/2011/compendia/statab/131ed/births-deaths-marriages-divorces.html>
+- Tableau, *A Guide to Charts*, <https://www.tableau.com/chart>
+- Microsoft, *Python Support in Visual Studio on Windows*, <https://learn.microsoft.com/en-us/visualstudio/python/overview-of-python-tools-for-visual-studio?view=vs-2022>
+  
 [HW2-petnames.csv](https://github.com/amelia1209812/CS625_FALL25/blob/main/HW2-petnames.csv)
 
-[HW2-petnames.json](https://github.com/amelia1209812/CS625_FALL25/blob/main/HW2-petnames.json)
+[HW3.twb]()
+
+[CS_625_HW3.py]()
+
+
