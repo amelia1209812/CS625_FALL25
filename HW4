@@ -1,0 +1,93 @@
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# -------------------------
+# Step 1: Load the provided Excel file
+# -------------------------
+dod = pd.read_excel("/Users/ameliaragsdale/Downloads/Defense.xlsx", header=[4,5,6,7])
+
+# Drop the completely empty columns
+dod = dod.dropna(axis=1, how='all')
+
+# Flatten any MultiIndex columns
+dod.columns = [' '.join([str(i).strip() for i in col if str(i) != 'nan']).strip() for col in dod.columns]
+
+# -------------------------
+# Step 2: Rename all relevant columns
+# -------------------------
+dod = dod.rename(columns={
+    # Totals for Q1
+    'ADD CHECK ARMY Unnamed: 3_level_2 Unnamed: 3_level_3': 'Army Total',
+    'ADD CHECK NAVY Unnamed: 4_level_2 Unnamed: 4_level_3': 'Navy Total',
+    'ADD CHECK MARINES Unnamed: 5_level_2 Unnamed: 5_level_3': 'Marine Corps Total',
+    'ADD CHECK AIR FORCE Unnamed: 6_level_2 Unnamed: 6_level_3': 'Air Force Total',
+    
+    # Male/Female for Q2
+    'Army Unnamed: 10_level_1 Male Enlisted': 'Army Male',
+    'Army Unnamed: 12_level_1 Female Enlisted': 'Army Female',
+    'Navy \\2 Unnamed: 15_level_1 Male Enlisted': 'Navy Male',
+    'Navy \\2 Unnamed: 17_level_1 Female Enlisted': 'Navy Female',
+    'Marine Corps Unnamed: 20_level_1 Male Enlisted': 'Marine Corps Male',
+    'Marine Corps Unnamed: 22_level_1 Female Enlisted': 'Marine Corps Female',
+    'Air Force Unnamed: 25_level_1 Male Enlisted': 'Air Force Male',
+    'Air Force Unnamed: 27_level_1 Female Enlisted': 'Air Force Female'
+})
+
+# -------------------------
+# Step 3: Prepare for question 1 data (Time Series)
+# -------------------------
+dod_q1 = dod[['Year Unnamed: 0_level_1 Unnamed: 0_level_2 Unnamed: 0_level_3', 
+              'Army Total', 'Navy Total', 'Marine Corps Total', 'Air Force Total']]
+
+dod_q1 = dod_q1.rename(columns={'Year Unnamed: 0_level_1 Unnamed: 0_level_2 Unnamed: 0_level_3': 'Year'})
+dod_q1['Year'] = pd.to_numeric(dod_q1['Year'], errors='coerce')
+
+# -------------------------
+# Step 4: Plot Line Chart
+# -------------------------
+plt.figure(figsize=(12,6))
+sns.lineplot(data=dod_q1, x='Year', y='Army Total', label='Army')
+sns.lineplot(data=dod_q1, x='Year', y='Navy Total', label='Navy')
+sns.lineplot(data=dod_q1, x='Year', y='Marine Corps Total', label='Marine Corps')
+sns.lineplot(data=dod_q1, x='Year', y='Air Force Total', label='Air Force')
+plt.title('Armed Forces Personnel Over Time (1960-2008)')
+plt.ylabel('Number of Personnel (thousands)')
+plt.xlabel('Year')
+plt.legend()
+plt.grid(True)
+plt.tight_layout()
+plt.show()
+
+# -------------------------
+# Step 5: Prepare for question 2 data (2008 Male vs Female)
+# -------------------------
+dod_2008 = dod[dod_q1['Year'] == 2008]
+
+df_2008 = pd.DataFrame({
+    'Branch': ['Army', 'Navy', 'Marine Corps', 'Air Force'],
+    'Male': [dod_2008['Army Male'].values[0],
+             dod_2008['Navy Male'].values[0],
+             dod_2008['Marine Corps Male'].values[0],
+             dod_2008['Air Force Male'].values[0]],
+    'Female': [dod_2008['Army Female'].values[0],
+               dod_2008['Navy Female'].values[0],
+               dod_2008['Marine Corps Female'].values[0],
+               dod_2008['Air Force Female'].values[0]]
+})
+
+# Melt for seaborn
+df_2008_melted = df_2008.melt(id_vars='Branch', value_vars=['Male','Female'],
+                              var_name='Gender', value_name='Count')
+
+# -------------------------
+# Step 6: Plot Bar Chart
+# -------------------------
+plt.figure(figsize=(10,6))
+sns.barplot(data=df_2008_melted, x='Branch', y='Count', hue='Gender')
+plt.title('Male vs Female Enlisted Personnel by Branch (2008)')
+plt.ylabel('Number of Personnel (thousands)')
+plt.xlabel('Branch')
+plt.grid(axis='y')
+plt.tight_layout()
+plt.show()
