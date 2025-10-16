@@ -1,7 +1,9 @@
 # HW4 - Arrange Tables
 
 Amelia Ragsdale
+
 CS 625, Fall 2025
+
 Date: October 12, 2025
 
 ## Question 1: Total DoD Personnel by Branch (1960–2008)
