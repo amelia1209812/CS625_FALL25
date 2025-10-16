@@ -1,7 +1,7 @@
-## HW4 - Arrange Tables
-Amelia Ragsdale
-CS 625, Fall 2025
-Date: October 12, 2025
+# HW4 - Arrange Tables
+**Amelia Ragsdale**
+**CS 625, Fall 2025**
+**Date: October 12, 2025**
 
 ## Question 1: Total DoD Personnel by Branch (1960–2008)
 
@@ -19,7 +19,7 @@ Date: October 12, 2025
 
 **Explanation:**
 
-A line chart shows the trends over time for multiple branches.By using distinct colors and markers allows clear differentiation between the different military branches. Grid lines improve readability of year-by-year changes (1960-2008).
+A line chart shows the trends over time for multiple branches. By using distinct colors and markers allows clear differentiation between the different military branches. Grid lines improve readability of year-by-year changes (1960-2008).
 
 **Insights:**
 
