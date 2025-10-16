@@ -5,16 +5,17 @@ Date: October 12, 2025
 
 ## Question 1: Total DoD Personnel by Branch (1960–2008)
 
-## Line Chart:
-Insert image of line chart here (e.g., dod_q1_linechart.png)
+**Line Chart:**
+![HW4_LineChart](HW4_LineChart.png)
 
-## Idiom-Mark-Data-Encode Table:
+**Idiom-Mark-Data-Encode Table:**
 
-Element	Details
-Idiom	Line chart
-Mark	Line + point markers
-Data	Total personnel by branch, 1960–2008
-Encoding	x → Year (position), y → Personnel (position), color → Branch
+| Element |	Details |
+|---------|---------|
+| Idiom	  | Line chart |
+| Mark    |	Line + point markers |
+| Data	  | Total personnel by branch, 1960–2008 |
+| Encoding|	x → Year (position), y → Number of Personnel , color of line → Branch |
 
 ## Explanation:
 
