@@ -13,7 +13,7 @@ Date: November 2nd, 2025
 
 **Boxplot - State Populations in 1970, 1985, 1995, and 2009**
 
-![Boxplot](Boxplot.png)
+![Boxplot](Boxplot_HW5.png)
 
 **Explanation:**
 
@@ -34,7 +34,7 @@ The use of distinct colors and point markers for each branch allows the user to 
 
 **Histogram - Distribution of State Populations in 2009**
 
-![Histogram](Histogram.png)
+![Histogram](Histogram_HW5.png)
 
 **Explanation:**
 
@@ -49,7 +49,7 @@ The use of distinct colors and point markers for each branch allows the user to 
 
 **eCDF - State Population Distributions (1970 vs. 2009)**
 
-![eCDF](eCDF.png)
+![eCDF](eCDF_HW5.png)
 
 **Explanation:**
 
@@ -64,10 +64,22 @@ The use of distinct colors and point markers for each branch allows the user to 
 ## Part 2: Further Analysis and Findings
 
 **Chart:**
-![Percentage_Growth](Percentage_Growth.png)
+![Top5Pop_2009](Top5Pop_2009.png)
 
 
 **Findings**
+
+**Chart:**
+![BarChart_HW5](BarChart_HW5.png)
+
+
+**Findings:**
+
+
+**Chart:**
+![Heatmap_HW5](Heatmap_HW5.png)
+
+**Findings:**
 
 
 
