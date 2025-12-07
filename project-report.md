@@ -21,9 +21,9 @@ This repository contains all data cleaning, processing, and visualization code u
 For this project, I analyzed the data on internet access and household income across Virginia counties. The datasets were obtained from the **U.S. Census Bureau’s American Community Survey (ACS) 5-Year Estimates**:  
 
 - **Internet Subscriptions in Households:** Number of households in each Virginia county with internet subscriptions.  
-  [Link to dataset](https://data.census.gov/table/ACSDT5Y2023.B28011?q=internet+access&g=040XX00US51$0500000)  
+  [Internet_Subscriptions.csv](internet_subscription.csv)
 - **Median Household Income:** Median income per county.  
-  [Link to dataset](https://data.census.gov/table/ACSDT5Y2023.B19013?q=household+income&t=Income+and+Poverty&g=040XX00US51$0500000)
+  [Median_Income](median_income.csv)
 
 I cleaned the datasets by selecting only the necessary columns and names, converting string values to numeric, and removing missing or invalid entries. After cleaning, I merged the two datasets on the county name to align all variables correctly. To facilitate comparison across counties of different sizes, I calculated a derived variable, `Internet_Access_Pct`, representing the percentage of households with internet access relative to the county with the highest number of households. This metric allows fair comparison and makes the scatterplot more understanding to the viewer.
 
@@ -55,7 +55,7 @@ The use of point size to represent the number of households provides additional 
 The top 10 counties bar chart emphasizes which counties lead in internet access. Most of these counties are urban and higher-income, demonstrating that broadband connectivity is concentrated in wealthier or densely populated areas. Differences in bar height allow easy comparison across counties, while labels clearly identify each location. This visualization provides concrete examples of how income and urban status contribute to higher internet access, complementing the scatterplot by highlighting the upper end of the distribution.
 
 **Figure: Top 10 Counties for Internet Access (%)**  
-![Top 10 Counties](project_top10.png)
+![Top 10 Counties](project_top10bar.png)
 
 ---
 
@@ -91,5 +91,6 @@ Creating the charts in Python strengthened my skills in data cleaning, merging d
 
 ## References
 
-- U.S. Census Bureau, American Community Survey (ACS) 5-Year Estimates: Internet Subscriptions in Households and Median Household Income. [https://www.census.gov/programs-surveys/acs/](https://www.census.gov/programs-surveys/acs/)  
+- U.S. Census Bureau, *American Community Survey (ACS) 5-Year Estimates: Internet Subscriptions in Households*, <https://data.census.gov/table/ACSDT5Y2023.B28011?q=internet+access&g=040XX00US51$0500000>
+- U.S. Census Bureau, *American Community Survey (ACS) 5-Year Estimates: Median Household Income*, <https://data.census.gov/table/ACSDT5Y2023.B19013?q=household+income&t=Income+and+Poverty&g=040XX00US51$0500000>
 - Python libraries: Pandas, Seaborn, Matplotlib, adjustText
