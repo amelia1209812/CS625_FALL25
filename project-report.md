@@ -49,9 +49,7 @@ The use of point size to represent the number of households provides additional 
 **Idiom:** Bar Chart  
 **Marks:** Rectangles (bars)  
 **Data:** County (categorical), Internet Access (%) (quantitative)  
-**Encode:**  
-- x-axis → County  
-- y-axis → Internet Access (%)  
+**Encode:** x-axis = County, y-axis = Internet Access (%)  
 
 The top 10 counties bar chart emphasizes which counties lead in internet access. Most of these counties are urban and higher-income, demonstrating that broadband connectivity is concentrated in wealthier or densely populated areas. Differences in bar height allow easy comparison across counties, while labels clearly identify each location. This visualization provides concrete examples of how income and urban status contribute to higher internet access, complementing the scatterplot by highlighting the upper end of the distribution.
 
@@ -65,9 +63,7 @@ The top 10 counties bar chart emphasizes which counties lead in internet access.
 **Idiom:** Bar Chart  
 **Marks:** Rectangles (bars)  
 **Data:** County (categorical), Internet Access (%) (quantitative)  
-**Encode:**  
-- x-axis → County  
-- y-axis → Internet Access (%)  
+**Encode:** x-axis = County, y-axis = Internet Access (%)  
 
 The bottom 10 counties bar chart highlights the counties with the lowest internet access. These are mostly rural and lower-income counties, emphasizing the digital divide. Bar height differences clearly communicate the severity of the gap. This chart is especially useful for identifying areas where policy intervention or infrastructure investment may be necessary. Together with the top 10 chart and scatterplot, it provides a overall comprehensive view of internet access disparities across Virginia.
 
