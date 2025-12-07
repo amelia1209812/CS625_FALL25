@@ -10,7 +10,7 @@ Due: December 7, 2025
 ## GitHub Repository and Code
 
 - **Project Repository:** [Insert your GitHub repo URL here]  
-- **Python Implementation of Final Chart:** [Insert link to Python file or notebook for scatterplot and bar charts here]  
+- **Python Code** [Insert link to Python file or notebook for scatterplot and bar charts here]  
 
 This repository contains all data cleaning, processing, and visualization code used to generate the final charts. The code is fully reproducible, and all charts can be recreated by running the Python scripts with the provided CSV files.
 
@@ -93,4 +93,6 @@ Creating the charts in Python strengthened my skills in data cleaning, merging d
 
 - U.S. Census Bureau, *American Community Survey (ACS) 5-Year Estimates: Internet Subscriptions in Households*, <https://data.census.gov/table/ACSDT5Y2023.B28011?q=internet+access&g=040XX00US51$0500000>
 - U.S. Census Bureau, *American Community Survey (ACS) 5-Year Estimates: Median Household Income*, <https://data.census.gov/table/ACSDT5Y2023.B19013?q=household+income&t=Income+and+Poverty&g=040XX00US51$0500000>
-- Python libraries: Pandas, Seaborn, Matplotlib, adjustText
+- Python, *User Guide*, <https://pandas.pydata.org/docs/user_guide/index.html>
+- Python, *Using Matplotlib*, <https://matplotlib.org/stable/users/index.html>
+- AdjustText, *AdjustText*, <https://pypi.org/project/adjustText/>
