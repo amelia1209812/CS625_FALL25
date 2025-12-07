@@ -1,7 +1,9 @@
 # Semester Project: Exploring Inequities in Internet Access Across Virginia Communities
 
 Amelia Ragsdale
+
 CS 625, Fall 2025
+
 Due: December 7, 2025
 
 ---
