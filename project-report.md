@@ -21,9 +21,9 @@ This repository contains all data cleaning, processing, and visualization code u
 For this project, I analyzed the data on internet access and household income across Virginia counties. The datasets were obtained from the **U.S. Census Bureau’s American Community Survey (ACS) 5-Year Estimates**:  
 
 - **Internet Subscriptions in Households:** Number of households in each Virginia county with internet subscriptions.  
-  [Link to dataset](https://www.census.gov/programs-surveys/acs/)  
+  [Link to dataset](https://data.census.gov/table/ACSDT5Y2023.B28011?q=internet+access&g=040XX00US51$0500000)  
 - **Median Household Income:** Median income per county.  
-  [Link to dataset](https://www.census.gov/programs-surveys/acs/)
+  [Link to dataset](https://data.census.gov/table/ACSDT5Y2023.B19013?q=household+income&t=Income+and+Poverty&g=040XX00US51$0500000)
 
 I cleaned the datasets by selecting only the necessary columns and names, converting string values to numeric, and removing missing or invalid entries. After cleaning, I merged the two datasets on the county name to align all variables correctly. To facilitate comparison across counties of different sizes, I calculated a derived variable, `Internet_Access_Pct`, representing the percentage of households with internet access relative to the county with the highest number of households. This metric allows fair comparison and makes the scatterplot more understanding to the viewer.
 
@@ -40,8 +40,8 @@ The scatterplot shows the relationship between median household income and inter
 
 The use of point size to represent the number of households provides additional context about the scale of each county, while color distinguishes between urban and rural counties. The chart title, “Higher-Income Virginia Counties Have Better Internet Access — But Several ‘Urban’ Counties Behave Like Rural Outliers,” succinctly summarizes the main insight. The scatterplot effectively communicates both the general trend and the exceptions, making it easier to understand how inequities continue within the state.
 
-**Figure: Scatterplot showing Internet Access (%) vs Median Household Income**  
-![Insert scatterplot image here](path_to_scatterplot_image.png)
+**Figure: Higher-Income Virginia Counties Have Better Internet Access But Several "Urban" Counties Behave Like Rural Outliers**  
+![Scatterplot](project_scatterplot.png)
 
 ---
 
@@ -55,7 +55,7 @@ The use of point size to represent the number of households provides additional 
 The top 10 counties bar chart emphasizes which counties lead in internet access. Most of these counties are urban and higher-income, demonstrating that broadband connectivity is concentrated in wealthier or densely populated areas. Differences in bar height allow easy comparison across counties, while labels clearly identify each location. This visualization provides concrete examples of how income and urban status contribute to higher internet access, complementing the scatterplot by highlighting the upper end of the distribution.
 
 **Figure: Top 10 Counties for Internet Access (%)**  
-![Insert top 10 bar chart image here](path_to_top10_bar_chart_image.png)
+![Top 10 Counties](project_top10.png)
 
 ---
 
@@ -69,7 +69,7 @@ The top 10 counties bar chart emphasizes which counties lead in internet access.
 The bottom 10 counties bar chart highlights the counties with the lowest internet access. These are mostly rural and lower-income counties, emphasizing the digital divide. Bar height differences clearly communicate the severity of the gap. This chart is especially useful for identifying areas where policy intervention or infrastructure investment may be necessary. Together with the top 10 chart and scatterplot, it provides a overall comprehensive view of internet access disparities across Virginia.
 
 **Figure: Bottom 10 Counties for Internet Access (%)**  
-![Insert bottom 10 bar chart image here](path_to_bottom10_bar_chart_image.png)
+![Bottom 10 Counties](project_bottom10.png)
 
 ---
 
